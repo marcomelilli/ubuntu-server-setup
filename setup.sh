@@ -45,7 +45,7 @@ function main() {
     addSSHKey "${username}" "${sshKey}"
     changeSSHConfig
     setupUfw
-    setupFailToBan
+    setupFail2Ban
 
     # if ! hasSwap; then
     #    setupSwap
