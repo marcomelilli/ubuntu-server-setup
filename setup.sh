@@ -47,6 +47,8 @@ function main() {
     setupUfw
     setupFail2Ban
 
+    setupNginx
+
     # if ! hasSwap; then
     #    setupSwap
     # fi
