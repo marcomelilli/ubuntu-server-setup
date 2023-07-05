@@ -42,9 +42,10 @@ cat ~/.ssh/user_server_ed25519.pub
 Finally, you will be prompted to specify a [timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) for the server. 
 
 # Manual Setup to automate
-- [ ] Install nginx (tutorial)[https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04]
+- [x] Install nginx (tutorial)[https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04]
 - [ ] Configuring Fail2Ban to Monitor Nginx Logs [tutorial](https://www.digitalocean.com/community/tutorials/how-to-protect-an-nginx-server-with-fail2ban-on-ubuntu-20-04#step-2-configuring-fail2ban-to-monitor-nginx-logs)
 - [ ] Change SSH port (from 22 to another)
+- [ ] Secure Nginx with Let's Encrypt: [tutorial](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04)
 - [ ] Create SSH key and add it to github secrets, to use it in github actions: [tutorial](https://dev.to/knowbee/how-to-setup-continuous-deployment-of-a-website-on-a-vps-using-github-actions-54im)
 
 
