@@ -63,8 +63,6 @@ function changeSSHConfig() {
 function setupUfw() {
     sudo apt-get install ufw
     sudo ufw allow OpenSSH
-    sudo ufw allow 80
-    sudo ufw allow 443
     yes y | sudo ufw enable
 }
 
@@ -73,6 +71,11 @@ function setupFail2Ban() {
     cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
     sudo systemctl enable fail2ban
     sudo systemctl start fail2ban
+}
+
+function setupNginx() {
+    sudo apt install nginx
+    sudo ufw allow 'Nginx Full'
 }
 
 # Create the swap file based on amount of physical memory on machine (Maximum size of swap is 4GB)
