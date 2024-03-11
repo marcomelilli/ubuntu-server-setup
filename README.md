@@ -6,7 +6,7 @@ This is a setup script to automate the setup and provisioning of Ubuntu servers.
 * Adds a public ssh key for the new user account
 * Disables password authentication to the server
 * Deny root login to the server
-* Setup Uncomplicated Firewall (allow SSH, port 80 and 443)
+* Setup Uncomplicated Firewall (allow 22, port 80 and 443)
 * Setup Fail2Ban (default config)
 * Setup the timezone for the server (Default to "Europe/Rome")
 * Install Network Time Protocol
@@ -44,7 +44,7 @@ Finally, you will be prompted to specify a [timezone](https://en.wikipedia.org/w
 # Manual Setup to automate
 - [x] Install nginx (tutorial)[https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04]
 - [ ] Configuring Fail2Ban to Monitor Nginx Logs [tutorial](https://www.digitalocean.com/community/tutorials/how-to-protect-an-nginx-server-with-fail2ban-on-ubuntu-20-04#step-2-configuring-fail2ban-to-monitor-nginx-logs)
-- [ ] Change SSH port (from 22 to another)
+- [ ] Change SSH port (from 22 to another) and edit ufw port
 - [ ] Secure Nginx with Let's Encrypt: [tutorial](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04)
 - [ ] Create SSH key and add it to github secrets, to use it in github actions: [tutorial](https://dev.to/knowbee/how-to-setup-continuous-deployment-of-a-website-on-a-vps-using-github-actions-54im)
 
